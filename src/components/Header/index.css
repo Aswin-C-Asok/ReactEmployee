@@ -1,0 +1,36 @@
+:root {
+  --main-header-background-color: #3b3e47;
+  --login-font-color: rgb(255, 255, 255);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px 20px;
+  background-color: var(--main-header-background-color)
+}
+
+.main-header-logo {
+  padding-top: 22px;
+  flex: 0 auto;
+}
+
+.employee-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.login-font {
+  margin-top: 8px;
+  color: var(--login-font-color);
+  font-size: 12px;
+  padding-left: 13px;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  padding-top: 20px
+}

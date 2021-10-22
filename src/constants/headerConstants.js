@@ -1,0 +1,7 @@
+export const MAIN_HEADER_CLASS = 'main-header'
+export const COMPANY_LOGO_ALT = 'Factweavers-logo'
+export const COMPANY_LOGO_CLASS = 'main-header-logo'
+export const USER_LOGIN_CLASS = 'login'
+export const USER_LOGO_ALT = 'employee-logo'
+export const USER_IMAGE_CLASS = 'employee-image'
+export const LOGIN_FONT_CLASS = 'login-font'
