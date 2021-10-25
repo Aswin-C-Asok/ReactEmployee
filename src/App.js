@@ -9,6 +9,8 @@ import Contacts from './Routes/contacts'
 import Projects from './Routes/projects'
 import Settings from './Routes/settings'
 import Tasks from './Routes/tasks'
+import Employeecard from './Routes/employeecard';
+import * as CONSTANT from './constants/navigationBarConstants'
 import {
   BrowserRouter,
   Switch,
@@ -16,33 +18,34 @@ import {
 } from 'react-router-dom'
 function App() {
   return (
-    <div>
+    <div className='main'>
       <BrowserRouter>
         <Header />
         <Navigationbar />
         <Switch>
-          <Route path="/" exact >
+          <Route path={CONSTANT.URL_TO_ROOT} exact >
             <Dashboard />
           </Route>
-          <Route path='/employees'>
+          <Route path={CONSTANT.URL_TO_EMPLOYEES}>
             <Employees />
+            <Employeecard />
           </Route>
-          <Route path='/clients'>
+          <Route path={CONSTANT.URL_TO_CLIENTS}>
             <Clients />
           </Route>
-          <Route path='/projects'>
+          <Route path={CONSTANT.URL_TO_PROJECTS}>
             <Projects />
           </Route>
-          <Route path='/tasks'>
+          <Route path={CONSTANT.URL_TO_TASKS}>
             <Tasks />
           </Route>
-          <Route path='/calls'>
+          <Route path={CONSTANT.URL_TO_CALLS}>
             <Calls />
           </Route>
-          <Route path='/contacts'>
+          <Route path={CONSTANT.URL_TO_CONTACTS}>
             <Contacts />
           </Route>
-          <Route path='/settings'>
+          <Route path={CONSTANT.URL_TO_SETTINGS}>
             <Settings />
           </Route>
         </Switch>

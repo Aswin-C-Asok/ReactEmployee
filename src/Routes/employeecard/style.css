@@ -1,0 +1,7 @@
+.employee-details {
+  display: grid;
+  background-color: var(--content-color);
+  padding: 15px;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}

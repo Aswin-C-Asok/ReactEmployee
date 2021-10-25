@@ -1,3 +1,10 @@
-export const MAIN_HEADER_CLASS = 'main-header'
-export const COMPANY_LOGO_ALT = 'Factweavers-logo'
-export const COMPANY_LOGO_CLASS = 'main-header-logo'
+export const URL_TO_ROOT = '/';
+export const URL_TO_EMPLOYEES = '/employees';
+export const URL_TO_CLIENTS = '/clients';
+export const URL_TO_CALLS = '/calls';
+export const URL_TO_CONTACTS = '/contacts';
+export const URL_TO_SETTINGS = '/settings';
+export const URL_TO_TASKS = '/tasks';
+export const URL_TO_PROJECTS = '/projects';
+export const NAVIGATIONBAR_CLASS = 'navigation-bar';
+export const LINK_CLASS = 'list';
