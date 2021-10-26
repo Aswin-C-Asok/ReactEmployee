@@ -6,12 +6,12 @@ import Employeecard from '../employeecard'
 import data from '../../employeeData/employeeData.json';
 
 function Employees() {
-  const [rowLimit] = useState(7);
-  const [employee, setEmployee] = useState(data.slice(0, rowLimit));
+  const [pageLimit] = useState(7);
+  const [employee, setEmployee] = useState(data.slice(0, pageLimit));
   const [employeeCount] = useState(data.length);
 
-  function pagination(offset, limit) {
-    setEmployee(data.slice(offset, limit));
+  function pagination(start, end) {
+    setEmployee(data.slice(start, end));
   };
   return (
     <div className={CONSTANTS.EMPLOYEE_HEADER_CLASS}>
@@ -34,7 +34,7 @@ function Employees() {
           ))}
         </ul>
       </div>
-      <Pagination paginationList={pagination} employeeCount={employeeCount} rowLimit={rowLimit} />
+      <Pagination paginationList={pagination} employeeCount={employeeCount} pageLimit={pageLimit} />
     </div >
   )
 }

@@ -1,3 +1,11 @@
+:root {
+  --card-footer-color-hover: rgb(245, 101, 101);
+  --card-footer-bordercolor: #c2c2c2ec;
+  --card-footer-color-active: #737373;
+  --card-footer-color-ul: rgb(0, 0, 255);
+  --card-footer-color: #ffffff;
+}
+
 .pagination {
   float: left;
   margin: 8px auto;
@@ -14,7 +22,7 @@
 }
 
 .card-footer {
-  background-color: white;
+  background-color: var(--card-footer-color);
   margin: 0px 20px 20px 20px;
 }
 
@@ -23,16 +31,16 @@
 }
 
 .card-footer>ul>li {
-  border: 1px solid #c2c2c2ec;
+  border: 1px solid var(--card-footer-bordercolor);
   padding: 3px;
-  color: blue;
+  color: var(--card-footer-color-ul);
   cursor: pointer;
 }
 
 .card-footer>ul>li:hover {
-  color: red;
+  color: var(--card-footer-color-hover);
 }
 
-.pagination>li>.active>a {
-  border-color: #737373;
+.card-footer>ul>li:active {
+  border-color: var(--card-footer-color-active)
 }

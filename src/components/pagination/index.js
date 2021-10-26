@@ -7,14 +7,14 @@ class Pagination extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageCount: Math.ceil(this.props.employeeCount / this.props.rowLimit)
+      pageCount: Math.ceil(this.props.employeeCount / this.props.pageLimit)
     }
   }
   handlePageClick = (data) => {
     let selected = data.selected;
-    let offset = Math.ceil(selected * this.props.rowLimit);
-    let limit = offset + this.props.rowLimit;
-    this.props.paginationList(offset, limit);
+    let start = Math.ceil(selected * this.props.pageLimit);
+    let end = start + this.props.pageLimit;
+    this.props.paginationList(start, end);
   };
   render() {
     return (
