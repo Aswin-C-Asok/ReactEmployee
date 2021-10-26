@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header'
-import Navigationbar from './components/navigationbar';
+import Navigationbar from './components/navigationBar';
 import Dashboard from './Routes/dashboard'
 import Employees from './Routes/employees'
 import Clients from './Routes/clients'
@@ -9,7 +9,6 @@ import Contacts from './Routes/contacts'
 import Projects from './Routes/projects'
 import Settings from './Routes/settings'
 import Tasks from './Routes/tasks'
-import Employeecard from './Routes/employeecard';
 import * as CONSTANT from './constants/navigationBarConstants'
 import {
   BrowserRouter,
@@ -28,7 +27,6 @@ function App() {
           </Route>
           <Route path={CONSTANT.URL_TO_EMPLOYEES}>
             <Employees />
-            <Employeecard />
           </Route>
           <Route path={CONSTANT.URL_TO_CLIENTS}>
             <Clients />

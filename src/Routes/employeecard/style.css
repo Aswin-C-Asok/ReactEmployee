@@ -1,7 +1,46 @@
-.employee-details {
+.grid-block {
   display: grid;
-  background-color: var(--content-color);
-  padding: 15px;
-  width: auto;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-top: 1px solid #E8E8E8;
+  width: auto;
+}
+
+.grid-block__item {
+  border-bottom: black;
+  padding-top: 5px;
+  padding-left: 6px;
+  padding-right: 8px;
+  font-size: 13.5px;
+  color: #737373;
+}
+
+.profile-block {
+  display: flex;
+  align-items: center;
+}
+
+.profile-block-text {
+  font-size: 12px;
+  color: #737373
+}
+
+.options::after {
+  content: '\2807';
+  font-size: 16px;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.profile-block-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.emailid-padding {
+  padding-top: 5px;
+  padding-right: 10px;
+  font-size: 13.5px;
+  color: #737373;
 }

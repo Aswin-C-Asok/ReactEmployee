@@ -8,7 +8,6 @@
 .emp-header {
   background-color: var(--subheading-color);
   border-bottom: 1px solid var(--subheading-border-color);
-  ;
 }
 
 .emp-font {
@@ -19,8 +18,11 @@
 }
 
 .emp-block2 {
-  margin: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: var(--subheading-color);
+  border-bottom: 1px solid var(--subheading-border-color);
 }
 
 .emp-block {

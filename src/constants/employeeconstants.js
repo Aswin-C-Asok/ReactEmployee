@@ -1,6 +1,0 @@
-export const EMPLOYEE_HEADER_CLASS = 'emp-block'
-export const EMPLOYEE_SUBHEADER_CLASS = 'emp-block2'
-export const EMPLOYEE_BLOCK = 'emp-header'
-export const EMPLOYEE_FONT = 'emp-font'
-export const LI_CLASS = 'item'
-export const MAIN_DETAILS = 'grid-data'

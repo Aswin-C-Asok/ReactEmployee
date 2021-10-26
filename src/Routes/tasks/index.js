@@ -1,5 +1,5 @@
 import React from 'react'
-import * as CONSTANTS from '../../constants/subheadingconstants';
+import * as CONSTANTS from '../../constants/subheadingConstants';
 function Tasks() {
   return (
     <div className={CONSTANTS.SUBHEADING_CLASS}>
